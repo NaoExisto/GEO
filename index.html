@@ -1,0 +1,59 @@
+<!DOCTYPE html>  <!--evitar que o browser mude para os chamados "quirks mode" quando renderizar um documento-->
+<html lang="pt-br">  <!--é usado para definir o idioma ou da página HTML ou apenas de um elemento dentro da página-->
+
+<head>  <!--cabeça do documento -->
+    <meta charset="UTF-8">      <!--define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Esta meta tag viewport fornece ao navegador instruções sobre como controlar o dimensionamento da página quando acessada de diferentes tamanhos de dispositivos.-->
+    <title>GEO</title>  <!--define o título do documento, mostrado na barra de título de um navegador ou na aba da página-->
+    <link rel="shortcut icon" href="assts/icons8-favicon-94.png" type="image/x-icon">  <!--definindoo favicon da pagina-->
+    <link rel="stylesheet" href="style.css">   <!--link para o css-->
+
+
+</head>
+
+<body>  <!--corpo do documento-->
+    <div class="main">   <!-- para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang-->
+       <!-- div: define uma divisão ou seção em um documento HTML*-->
+
+
+        <div class="left">
+            <h1>Faça o login e utilize o GEO</h1>   <!--geralmente é o titulo do texto dando um destaque maior-->
+            <img src="assts/Globalization-bro.svg" alt="imagem">   <!--usado para inserir imagens em uma pagina-->
+
+        </div>
+        <div class="right">
+            <div class="card">  <!---->
+
+                <h1>Login</h1>
+                <div class="textfield">  <!--textfield: campo de texto-->
+
+                    <label for="usuario">Usuario:</label>  <!--A tag label é importante para os campos de formulários. Ela especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.-->
+                    <input id="usuario" type="text" placeholder="usuario">   <!--input: é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->   <!--placeholder: espaço reservado para descrever algo-->
+                
+                </div>
+                <div class="textfield">  
+
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" placeholder="senha"> 
+                
+                </div>
+                <button class="btn-login">  <!--A tag <button> é utilizada para inserir interatividade em uma página ou formulário e tem como função executar uma determinada ação ao receber um clique do usuário. Por padrão, sua aparência é semelhante a um botão retangular.-->
+                    LOGIN
+                </button>
+
+                
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,700;1,400&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter:wght@400;700&family=Noto+Serif+Vithkuqi:wght@400;700&display=swap');
+
+
+*{
+    margin: 0px;/*margem*/
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'andika';  /*Familia da fonte*/
+}
+
+.main{
+    
+    width: 98vw;  /*largura*/
+    height: 100vw; /*altura*/
+    background: #201b2c;    /* fundo/ no caso, esta cor de fundo*/
+    display: flex;   /*usada para criar um container flexível, permitindo a criação de layouts de design responsivos e alinhamento de itens em um único eixo*/
+    /* eixo x */
+    justify-content: center;  /*justificar conteudo */   /*A propriedade justify-content no CSS é utilizada em um container flexível (com display: flex ou display: inline-flex) para definir como os itens flexíveis serão alinhados ao longo do eixo principal (horizontal, se o valor de flex-direction for "row", ou vertical, se for "column").*/
+    /* eixo y */
+    align-items: center;   /*alinhamento de itens*/  /*a propriedade align-items: center é aplicada a um container flexível, fazendo com que os itens dentro desse container sejam centralizados ao longo do eixo secundário.*/
+    
+
+}
+
+.left{
+    
+    width: 50vw; /*largura*/
+    height: 100vw; /*altura*/
+    display: flex;  /*usada para criar um container flexível, permitindo a criação de layouts de design responsivos e alinhamento de itens em um único eixo*/
+    /* eixo x */
+    justify-content: center;   /*justificar conteudo */   /*A propriedade justify-content no CSS é utilizada em um container flexível (com display: flex ou display: inline-flex) para definir como os itens flexíveis serão alinhados ao longo do eixo principal (horizontal, se o valor de flex-direction for "row", ou vertical, se for "column").*/
+    /* eixo y */
+    align-items: center;    /*alinhamento de itens*/  /*a propriedade align-items: center é aplicada a um container flexível, fazendo com que os itens dentro desse container sejam centralizados ao longo do eixo secundário.*/
+    
+    flex-direction: column; /*A propriedade flex-direction: column; no CSS é usada para definir a direção em que os itens de um container flexível são posicionados ao longo do eixo principal. Ao utilizar flex-direction: column;, os itens são dispostos verticalmente, de cima para baixo, em vez de horizontalmente.*/
+}
+.left>h1{
+
+    color: #77ffc0;   /*cor da letra*/
+}
+img{
+    max-height: 80%;   /*maximo de altura*/
+}
+.right{
+     
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    /*border: 5px solid red;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; /*preenchimento*/
+    background: #2f2841;
+    border-radius: 20px;  /*raio da borda*/
+    box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);  /*sombra de caixa*/
+    
+}
+.card>h1{
+   
+    color: #77ffc0;  
+    font-weight: 800;  /*espessura da fonte*/
+    
+
+}
+.textfield{
+   
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(59, 102, 93, 0.329);
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.textfield > input::placeholder{
+    color: white;
+    
+
+}
+input:focus{
+    border-color: aqua; /*cor da borda*/
+    
+}
+
+.textfield > label{
+    color: white;
+    margin-top: 10px;   /*margem superior*/
+    margin-bottom: 10px; /*margem inferior*/
+    
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none; /*contorno ao redor de um elemento*/
+    text-transform: uppercase;  /*transformação de texto*/
+    font-weight: 800;
+    letter-spacing: 4px; /*espaçamento entre letras*/
+    color: black;
+    background-color: aqua;
+    cursor: pointer;   
+    box-shadow: 0px 10px 40px rgba(22, 179, 145, 0.568);  /* sombra da caixa*/
+
+}
+
+.btn-login:hover{
+    transition: background 1s; /*transição/ tempo da duração da cor em cima do botão*/
+    background: rgb(83, 187, 83);
+    
+}
